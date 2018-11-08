@@ -19,10 +19,7 @@
 h1 {
 	text-align: center;
 }
-.category_selector {
-	left: 45%;
-	width: 20%;
-}
-.button {
+.col {
+	width: 50%;
 	text-align: center;
 }
