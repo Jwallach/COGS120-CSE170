@@ -11,12 +11,17 @@
 	max-height: 50px;
 	max-width: 50px;
 }
+.container-fluid {
+	height: 100%;
+	position: absolute;
+	background-color: rgba(128, 128, 128, 0.5);	
+}
 h1 {
 	text-align: center;
 }
 .drop {
 	left: 45%;
-	width: 10%%;
+	width: 20%;
 }
 .button {
 	text-align: center;
