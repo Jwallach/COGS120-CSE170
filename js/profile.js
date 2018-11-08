@@ -39,7 +39,7 @@ $( document ).ready(function() {
       for (var key in pref_aspect) 
       {
         var like = "";
-        if (pref_aspect[key] === "like")
+        if (pref_aspect[key] === "Liked")
         {
           like = "Liked";
         }
@@ -69,7 +69,7 @@ $( document ).ready(function() {
       for (var key in pref) 
       {
         var like = "";
-        if (pref[key] === "like")
+        if (pref[key] === "Liked")
         {
           like = "Liked";
         }
