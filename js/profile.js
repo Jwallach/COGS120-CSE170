@@ -80,7 +80,7 @@ $( document ).ready(function() {
         document.getElementById("category_preferences").innerHTML += "<h5><a href=" + categoryMap[key] + ">" + key + "</a> | " + like + "</h5>\n"; 
       }
     }
-    if (localStorage.getItem("username") == "")
+    if (localStorage.getItem("username") === null)
 	{
 		document.getElementById("username").innerHTML += "<h1>Username</h1>";
 	}
