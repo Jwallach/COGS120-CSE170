@@ -31,7 +31,7 @@ $( document ).ready(function() {
     var pref = JSON.parse(localStorage.getItem("preferences"));
     if (pref.length == 0)
     {
-        document.getElementById("aspect_preferences").innerHTML += "<h5>" + "You have no aspect preferences, go to Preferences to add some" +"</h5>\n";
+        document.getElementById("aspect_preferences").innerHTML += "<h5><a href=\"preferences.html\">" + "You have no aspect preferences, go to Preferences to add some" +"</a></h5>\n";
     }
     else
     {
