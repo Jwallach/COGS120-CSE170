@@ -23,6 +23,7 @@ $( document ).ready(function() {
     }
     
     
+    var aspectMap = aspects;
     //if not defined,set the preferences to null
     if (localStorage.getItem("preference_aspect") === null)
     {
@@ -46,7 +47,7 @@ $( document ).ready(function() {
         {
           like = "Disliked";
         }
-        document.getElementById("aspect_preferences").innerHTML += "<h5><a href=" + gameMap[key] + ">" + key + "</a> | " + like + "</h5>\n"; 
+        document.getElementById("aspect_preferences").innerHTML += "<h5><a href=" + aspectMap[key] + ">" + key + "</a> | " + like + "</h5>\n"; 
       }
     }
     

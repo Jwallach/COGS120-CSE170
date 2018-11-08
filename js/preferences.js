@@ -7,7 +7,8 @@ $(document).ready(function() {
     
     for (var key in categoryMap) 
     {
-        var context = {title: key, link: categoryMap[key], id_like: key + "_like", id_neutral : key + "_neutral", id_dislike: key + "_dislike"};
+        var id = key.replace(/\s/g,'');
+        var context = {title: key, name:id, link: categoryMap[key], id_like: id + "_like", id_neutral : id + "_neutral", id_dislike: id + "_dislike"};
         var html    = template(context);
         document.getElementById("categories").innerHTML += html;
     }
@@ -19,10 +20,10 @@ $(document).ready(function() {
     }
     
     var pref_category = JSON.parse(localStorage.getItem("preference_category"));
-    console.log(pref_category);
     for (var key in pref_category)
     {         
          var value = pref_category[key];
+         var id = key.replace(/\s/g,'');
          if (value === "Liked")
          {
              document.getElementById(key + "_like").checked = true;
@@ -34,13 +35,47 @@ $(document).ready(function() {
     }
     
     
+    //aspect mapping
+    var aspectMap = aspects;
+    
+    for (var key in aspectMap) 
+    {
+        var id = key.replace(/\s/g,'');
+        var context = {title: key, name: id, link: aspectMap[key], id_like: id + "_like", id_neutral : id + "_neutral", id_dislike: id + "_dislike"};
+        var html    = template(context);
+
+        document.getElementById("aspects").innerHTML += html;
+    }
+    
+    //if not defined,set the preferences to null
+    if (localStorage.getItem("preference_aspect") === null)
+    {
+        localStorage.setItem("preference_aspect",JSON.stringify({}));
+    }
+    
+    var pref_aspect = JSON.parse(localStorage.getItem("preference_aspect"));
+    for (var key in pref_aspect)
+    {         
+         var value = pref_aspect[key];
+         var id = key.replace(/\s/g,'');
+         if (value === "Liked")
+         {
+             document.getElementById(id + "_like").checked = true;
+         }
+         else if (value === "Disliked")
+         {
+            document.getElementById(id + "_dislike").checked = true;
+         }
+    }
+    
+    
 });
 
 
 
 $('#save_preferences').click(function(){
     var categoryMap = categories;
-    
+    var aspectMap = aspects;
     
     //if not defined,set the preferences to null
     if (localStorage.getItem("preference_category") === null)
@@ -51,7 +86,7 @@ $('#save_preferences').click(function(){
     
     for (var key in categoryMap) 
     {
-         var value = $("input[name=" + key + "]:checked").val();
+         var value = $("input[name=" + key.replace(/\s/g,'') + "]:checked").val();
          if (value === "Liked")
          {
              pref_category[key] = "Liked";
@@ -66,9 +101,35 @@ $('#save_preferences').click(function(){
          }
     }
     
-    
     localStorage.setItem("preference_category",JSON.stringify(pref_category));
     
     
+    //if not defined,set the preferences to null
+    if (localStorage.getItem("preference_aspect") === null)
+    {
+        localStorage.setItem("preference_aspect",JSON.stringify({}));
+    }
+    var pref_aspect = JSON.parse(localStorage.getItem("preference_aspect"));
+    
+    for (var key in aspectMap) 
+    {
+         var value = $("input[name=" + key.replace(/\s/g,'') + "]:checked").val();
+         if (value === "Liked")
+         {
+             pref_aspect[key] = "Liked";
+         }
+         else if (value === "Disliked")
+         {
+             pref_aspect[key] = "Disliked";
+         }
+         else
+         {
+             delete pref_aspect[key];
+         }
+    }
+    
+    
+      localStorage.setItem("preference_aspect",JSON.stringify(pref_aspect));
+  
    
 });

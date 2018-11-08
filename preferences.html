@@ -26,30 +26,8 @@
 				</div>
 				<br>
 				<h1>Aspects</h1><br>
-				<div class="drop dropdown">
-					<select>
-						<option value="Like">Like</option>
-						<option value="Like" selected>No Preference</option>
-						<option value="Like">Dislike</option>
-					</select> Moddable
-					<br>
-					<select>
-						<option value="Like">Like</option>
-						<option value="Like" selected>No Preference</option>
-						<option value="Like">Dislike</option>
-					</select> Open World
-					<br>
-					<select>
-						<option value="Like">Like</option>
-						<option value="Like" selected>No Preference</option>
-						<option value="Like">Dislike</option>
-					</select> Visually Appealing
-					<br>
-					<select>
-						<option value="Like">Like</option>
-						<option value="Like" selected>No Preference</option>
-						<option value="Like">Dislike</option>
-					</select> Story-driven
+				<div id="aspects">
+
 				</div>
 				<br>
 				<div class="button">
@@ -65,9 +43,9 @@
   <div class="category_entry" id={{title}}>
     <h1><a href={{link}}>{{title}}</a></h1>
     <div class="category_selector">
-      <input type="radio" name={{title}} value="Liked" id={{id_like}}>Like</input>
-      <input type="radio" name={{title}} value="No Preference" id={{id_neutral}} checked="true">No Preference</input>
-      <input type="radio" name={{title}} value="Disliked" id={{id_dislike}}>Dislike </input>
+      <input type="radio" class={{title}} name={{name}} value="Liked" id={{id_like}}>Like</input>
+      <input type="radio" class={{title}} name={{name}} value="No Preference" id={{id_neutral}} checked="true">No Preference</input>
+      <input type="radio" class={{title}} name={{name}} value="Disliked" id={{id_dislike}}>Dislike </input>
     </div>
   </div>
 </script>
