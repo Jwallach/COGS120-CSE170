@@ -1,8 +1,8 @@
 
 
-  games = [
-    {"Overwatch" : "games/overwatch.html"},
-    {"Skyrim" : "games/skyrim.html"}
-    ];
+  games = 
+    {"Overwatch" : "games/overwatch.html",
+    "Skyrim" : "games/skyrim.html"}
+    ;
 
 
