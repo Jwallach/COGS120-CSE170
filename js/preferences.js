@@ -130,6 +130,7 @@ $('#save_preferences').click(function(){
     
     
       localStorage.setItem("preference_aspect",JSON.stringify(pref_aspect));
-  
+	  
+	  document.getElementById("saved").innerHTML += "Preferences Saved. <h5><a href=\"recommend.html\"</a>Click here to see recommendations!</h5>\n";
    
 });

@@ -32,6 +32,7 @@
 				<br>
 				<div class="button">
 					<button id="save_preferences" type="submit"><a href="recommend.html">Save Preferences</a></button>
+					<div id="saved"></div>
 				</div>
 			</div>
 		</div>
@@ -41,7 +42,7 @@
 	
   <script id="selection_template" type="text/x-handlebars-template">
   <div class="category_entry" id={{title}}>
-    <h1><a href={{link}}>{{title}}</a></h1>
+    <h5><a href={{link}}>{{title}}</a></h5>
     <div class="category_selector">
       <input type="radio" class={{title}} name={{name}} value="Liked" id={{id_like}}>Like</input>
       <input type="radio" class={{title}} name={{name}} value="No Preference" id={{id_neutral}} checked="true">No Preference</input>
