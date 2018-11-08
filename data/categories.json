@@ -1,5 +1,3 @@
-{
-  "categories":[
+    categories = [
     {"SinglePlayer": "categories/singleplayer.html"}
-    ]
-}
+    ];

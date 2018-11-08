@@ -1,14 +1,8 @@
-{
-  "aspects": [
-    {"Hard but Fair":"aspects/hard_but_fair.html"}
-  ],
 
-  "games":[
+
+  games = [
     {"Overwatch" : "games/overwatch.html"},
     {"Skyrim" : "games/skyrim.html"}
-    ],
+    ];
 
-  "categories":[
-    {"SinglePlayer": "categories/singleplayer.html"}
-    ]
-}
+
