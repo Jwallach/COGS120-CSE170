@@ -47,7 +47,7 @@ $( document ).ready(function() {
         {
           like = "Disliked";
         }
-        document.getElementById("aspect_preferences").innerHTML += "<h5>" + pref[x][0] + " | " + like + "</h5>\n"; 
+        document.getElementById("aspect_preferences").innerHTML += "<h5><a href=" + gameMap[pref[x]] + ">" + pref[x][0] + "</a> | " + like + "</h5>\n"; 
       }
     }
     
