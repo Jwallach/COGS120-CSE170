@@ -1,5 +1,5 @@
 var username = document.getElementById('username');
-localStorage.setItem('username', username.value);	
+	
 
 function check() {	
 	if (username.value == "")
@@ -8,6 +8,7 @@ function check() {
 	}
 	else
 	{
+		localStorage.setItem('username', username.value);
 		window.location.href = "profile.html";
 	}
 }

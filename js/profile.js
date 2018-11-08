@@ -80,6 +80,12 @@ $( document ).ready(function() {
         document.getElementById("category_preferences").innerHTML += "<h5><a href=" + categoryMap[key] + ">" + key + "</a> | " + like + "</h5>\n"; 
       }
     }
-    
-
+    if (localStorage.getItem("username") == "")
+	{
+		document.getElementById("username").innerHTML += "<h1>Username</h1>";
+	}
+	else
+	{
+		document.getElementById("username").innerHTML += "<h1>"+localStorage.getItem("username")+"</h1>";
+	}
 });
