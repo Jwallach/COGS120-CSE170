@@ -8,45 +8,21 @@
 	<title>Category Selection</title>
   </head>
 
+  
+  
+  
 <body>
 	<!-- Navigation -->
 	<div id="nav-container">
 	</div>
 	<!-- End of Navigation -->
+	
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col">
 				<h1>Categories</h1><br>
-				<div class="drop dropdown">
-					<select>
-						<option value="Like">Like</option>
-						<option value="Like" selected>No Preference</option>
-						<option value="Like">Dislike</option>
-					</select> Multiplayer
-					<br>
-					<select>
-						<option value="Like">Like</option>
-						<option value="Like" selected>No Preference</option>
-						<option value="Like">Dislike</option>
-					</select> Singleplayer
-					<br>
-					<select>
-						<option value="Like">Like</option>
-						<option value="Like" selected>No Preference</option>
-						<option value="Like">Dislike</option>
-					</select> FPS
-					<br>
-					<select>
-						<option value="Like">Like</option>
-						<option value="Like" selected>No Preference</option>
-						<option value="Like">Dislike</option>
-					</select> MMO
-					<br>
-					<select>
-						<option value="Like">Like</option>
-						<option value="Like" selected>No Preference</option>
-						<option value="Like">Dislike</option>
-					</select> RPG
+				<div id="categories">
+
 				</div>
 				<br>
 				<h1>Aspects</h1><br>
@@ -77,17 +53,33 @@
 				</div>
 				<br>
 				<div class="button">
-					<button class="button" type="submit"><a href="recommend.html">Submit</a></button>
+					<button id="save_preferences" type="submit"><a href="recommend.html">Save Preferences</a></button>
 				</div>
 			</div>
 		</div>
 	</div>
 </body>
 	
+	
+  <script id="selection_template" type="text/x-handlebars-template">
+  <div class="category_entry" id={{title}}>
+    <h1><a href={{link}}>{{title}}</a></h1>
+    <div class="category_selector">
+      <input type="radio" name={{title}} value="Liked" id={{id_like}}>Like</input>
+      <input type="radio" name={{title}} value="No Preference" id={{id_neutral}} checked="true">No Preference</input>
+      <input type="radio" name={{title}} value="Disliked" id={{id_dislike}}>Dislike </input>
+    </div>
+  </div>
+</script>
   <!-- JS -->
+  <script type="text/javascript" id="games" src="data/games.json"></script>
+  <script type="text/javascript" id="categories" src="data/categories.json"></script>
+  <script type="text/javascript" id="aspects" src="data/aspects.json"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.js"></script>
+  <script type="text/javascript" src="js/preferences.js"></script>
     <script type="text/javascript">
     $(document).ready(function() {
     $('#nav-container').load('navbar.html');

@@ -24,22 +24,21 @@ $( document ).ready(function() {
     
     
     //if not defined,set the preferences to null
-    if (localStorage.getItem("preferences") === null)
+    if (localStorage.getItem("preference_aspect") === null)
     {
-        localStorage.setItem("preferences",JSON.stringify([]));
+        localStorage.setItem("preference_aspect",JSON.stringify({}));
     }
-    var pref = JSON.parse(localStorage.getItem("preferences"));
+    var pref = JSON.parse(localStorage.getItem("preference_aspect"));
     if (pref.length == 0)
     {
         document.getElementById("aspect_preferences").innerHTML += "<h5><a href=\"preferences.html\">" + "You have no aspect preferences, go to Preferences to add some" +"</a></h5>\n";
     }
     else
     {
-      
-      for (var x = 0; x < pref.length; x ++)
+      for (var key in pref) 
       {
         var like = "";
-        if (pref[x][1] === "like")
+        if (pref[key] === "like")
         {
           like = "Liked";
         }
@@ -47,7 +46,7 @@ $( document ).ready(function() {
         {
           like = "Disliked";
         }
-        document.getElementById("aspect_preferences").innerHTML += "<h5><a href=" + gameMap[pref[x]] + ">" + pref[x][0] + "</a> | " + like + "</h5>\n"; 
+        document.getElementById("aspect_preferences").innerHTML += "<h5><a href=" + gameMap[pref[key]] + ">" + key + "</a> | " + like + "</h5>\n"; 
       }
     }
     
