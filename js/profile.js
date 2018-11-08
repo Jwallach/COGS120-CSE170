@@ -29,17 +29,17 @@ $( document ).ready(function() {
     {
         localStorage.setItem("preference_aspect",JSON.stringify({}));
     }
-    var pref = JSON.parse(localStorage.getItem("preference_aspect"));
-    if (pref.length == 0)
+    var pref_aspect = JSON.parse(localStorage.getItem("preference_aspect"));
+    if (Object.keys(pref_aspect).length == 0)
     {
         document.getElementById("aspect_preferences").innerHTML += "<h5><a href=\"preferences.html\">" + "You have no aspect preferences, go to Preferences to add some" +"</a></h5>\n";
     }
     else
     {
-      for (var key in pref) 
+      for (var key in pref_aspect) 
       {
         var like = "";
-        if (pref[key] === "like")
+        if (pref_aspect[key] === "like")
         {
           like = "Liked";
         }
@@ -59,8 +59,8 @@ $( document ).ready(function() {
     {
         localStorage.setItem("preference_category",JSON.stringify({}));
     }
-    pref = JSON.parse(localStorage.getItem("preference_category"));
-    if (pref.length == 0)
+    var pref = JSON.parse(localStorage.getItem("preference_category"));
+    if (Object.keys(pref).length == 0)
     {
         document.getElementById("category_preferences").innerHTML += "<h5><a href=\"preferences.html\">" + "You have no category preferences, go to Preferences to add some" +"</a></h5>\n";
     }
