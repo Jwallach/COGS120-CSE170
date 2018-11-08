@@ -46,7 +46,37 @@ $( document ).ready(function() {
         {
           like = "Disliked";
         }
-        document.getElementById("aspect_preferences").innerHTML += "<h5><a href=" + gameMap[pref[key]] + ">" + key + "</a> | " + like + "</h5>\n"; 
+        document.getElementById("aspect_preferences").innerHTML += "<h5><a href=" + gameMap[key] + ">" + key + "</a> | " + like + "</h5>\n"; 
+      }
+    }
+    
+    
+    var categoryMap = categories;
+    console.log(categories);
+    //if not defined,set the preferences to null
+    if (localStorage.getItem("preference_category") === null)
+    {
+        localStorage.setItem("preference_category",JSON.stringify({}));
+    }
+    pref = JSON.parse(localStorage.getItem("preference_category"));
+    if (pref.length == 0)
+    {
+        document.getElementById("category_preferences").innerHTML += "<h5><a href=\"preferences.html\">" + "You have no category preferences, go to Preferences to add some" +"</a></h5>\n";
+    }
+    else
+    {
+      for (var key in pref) 
+      {
+        var like = "";
+        if (pref[key] === "like")
+        {
+          like = "Liked";
+        }
+        else
+        {
+          like = "Disliked";
+        }
+        document.getElementById("category_preferences").innerHTML += "<h5><a href=" + categoryMap[key] + ">" + key + "</a> | " + like + "</h5>\n"; 
       }
     }
     
