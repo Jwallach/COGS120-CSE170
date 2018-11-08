@@ -1,7 +1,8 @@
-var username = document.getElementById('username');
+
 	
 
 function check() {	
+    var username = document.getElementById('username');
 	if (username.value == "")
 	{
 		alert('Invalid username');
