@@ -1,0 +1,25 @@
+.body, .html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+}
+.search-container {
+    max-width: 1000px;
+	width: 100%;
+}
+.logo {
+	max-height: 50px;
+	max-width: 50px;
+}
+.container-fluid {
+	height: 100%;
+	position: absolute;
+}
+.info {
+	border-radius: 2px;
+	margin: 10px auto 30px;
+	max-width: 40%;
+}
+.login-form{ 
+	text-align: center;
+}
