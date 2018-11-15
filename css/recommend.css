@@ -16,3 +16,43 @@ body {
 	text-align: center;
 	height: 100%;
 }
+.box {
+	margin: auto;
+	border: 2px solid;
+	position: center;
+	width: 60%;
+	text-align: center;
+}
+.title  {
+	border: 1px solid;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: rgba(132, 160, 219, 0.5);	
+}
+.description {
+	border: 1px solid;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: rgb(255, 255, 255);
+}
+.tags {
+	clear: both;
+	background-color: rgb(255, 255, 255);
+	
+}
+.categories {
+	border: 1px solid;
+	float: left;
+	width: 50%;
+}
+.aspects {
+	border: 1px solid;
+	float: right;
+	width: 50%;
+}
+.clear {
+	clear: both;
+}
+.col {
+	padding-top: 50px;
+}
