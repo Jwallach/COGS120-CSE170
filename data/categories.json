@@ -11,6 +11,17 @@
       "dark_souls",
       "skyrim"
     ]
+  },
+  "sandbox": {
+    "title":"Sandbox",
+    "link": "categories/sandbox.html",
+    "description": "Games that typically encourage creative solutions and do not have a set win condition or end goal. Generally encourage players to explore and play with the mechanics rather than beating the game",
+
+    "game_examples": [
+      "rimworld",
+      "cataclysm_dda",
+      "skyrim"
+    ]
   }
     
 };

@@ -10,9 +10,6 @@
       "rimworld",
       "dark_souls",
       "darkest_dungeon"
-    ],
-    "similar_aspects": [
-      "deterministic"
     ]
   },
 
@@ -20,13 +17,21 @@
     "title":"Deterministic Gameplay",
     "link":"aspects/deterministic.html",
     "description":"Games that have no reliance on random chance. For a given set of actions, the same result will always manifest. An example of this type of game is chess. If the players make the samemoves, then this will always lead  to the same board state.",
-        "similar_aspects": [
-      "hard_but_fair_difficulty"
-    ],
     "game_examples" : [
     "chess",
     "overwatch",
     "league_of_legends"
+    ]
+    },
+    "moddable":{
+    "title":"Robust Mod Support",
+    "link":"aspects/moddable.html",
+    "description":"Games that have good mod support. Modders can often add new mechanics and otherwise greatly expand the content of the game. Generally has few hard coded aspects and most of the parts of the game can be modified",
+
+    "game_examples" : [
+    "rimworld",
+    "factorio",
+    "minecraft"
     ]
     }
 };
