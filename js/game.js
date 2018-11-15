@@ -21,11 +21,12 @@ $( document ).ready(function() {
     
     if (alreadyInWishlist)
     {
-        document.getElementById("wishlist_game").innerHtml = "Game in Wish List";
+        document.getElementById("wishlist_game").innerHTML = "Game in Wish List";
     }
     
 
 });
+
 
 
 $('#wishlist_game').click(function(){
@@ -46,15 +47,14 @@ $('#wishlist_game').click(function(){
         if (wishlist[x] === title)
         {
             alreadyInWishlist = true;
+            document.getElementById("wishlist_game").innerHTML = "Game removed from Wish List";
+            wishlist.splice(x,1);
+            localStorage.setItem("wishlist",JSON.stringify(wishlist));
             break;
         }
     }
     
-    if (alreadyInWishlist)
-    {
-        document.getElementById("wishlist_game").innerHTML = "Game is already in Wish List";
-    }
-    else
+    if (!alreadyInWishlist)
     {
         //put in the list
         wishlist.push(title);
