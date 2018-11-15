@@ -1,8 +1,37 @@
 
 
   games = 
-    {"Overwatch" : "games/overwatch.html",
-    "Skyrim" : "games/skyrim.html"}
-    ;
+{
+  "Overwatch": {
+    "link": "games/overwatch.html",
+    "description": "In a time of global crisis, an international task force of heroes banded together to restore peace to a war-torn world. This organization, known as Overwatch, ended the crisis and helped maintain peace for a generation, inspiring an era of exploration, innovation, and discovery. After many years, Overwatch's influence waned and it was eventually disbanded. Now in the wake of its dismantling, conflict is rising once again. Overwatch may be gone... but the world still needs heroes.",
+    "categories": [
+      "Multiplayer",
+      "FPS"
+    ],
+    "aspects": [
+      "Deterministic",
+      "Competitive"
+    ],
+    "similar_games": [
+      "Team Fortress 2"
+    ]
+  },
+  "Skyrim": {
+    "link": "games/skyrim.html",
+    "description": "The Elder Scrolls V: Skyrim, the 2011 Game of the Year, is the next chapter in the highly anticipated Elder Scrolls saga. Developed by Bethesda Game Studios, the 2011 Studio of the Year, that brought you Oblivion and Fallout 3. Skyrim reimagines and revolutionizes the open-world fantasy epic, bringing to life a complete virtual world open for you to explore any way you choose.",
+    "categories": [
+      "Singleplayer",
+      "RPG"
+    ],
+    "aspects": [
+      "Moddable",
+      "Open World"
+    ],
+    "similar_games": [
+      "Team Fortress 2"
+    ]
+  }
+};
 
 
