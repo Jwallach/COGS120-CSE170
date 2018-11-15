@@ -1,3 +1,4 @@
   aspects = 
-    {"Hard but Fair Difficulty":"aspects/hard_but_fair.html"}
+    {"Hard but Fair Difficulty":"aspects/hard_but_fair.html",
+    "Deterministic": "aspects/deterministic.html"}
   ;
