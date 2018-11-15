@@ -57,7 +57,7 @@
     ],
     "aspects": [
       "moddable",
-      "hard_but_fair_gameplay"
+      "hard_but_fair_difficulty"
     ],
     "similar_games": [
       "dwarf_fortress"

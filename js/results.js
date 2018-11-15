@@ -4,10 +4,15 @@ $( document ).ready(function() {
     console.log(searchtext);
 
 	searchtext = searchtext.toLowerCase();
+	var gameMap = games;
+    var catMap = categories;
+    var aspMap = aspects;
 	var gResults = [];
 	var cResults = [];
 	var aResults = [];
-
+	var gcResults = [];
+	var gaResults = [];
+	
 	for (var g in games)
 	{
 		if (games[g]['title'].toLowerCase().includes(searchtext) && searchtext != "")
@@ -17,14 +22,58 @@ $( document ).ready(function() {
 			document.getElementById("game_result").innerHTML += "<div class='row'><li><h3><a href="+games[g]['link']+"><img class='logo' src="+games[g]['images'][0]+"></img>"+games[g]['title']+"</a></h3>";
 			document.getElementById("game_result").innerHTML += "<div class='desc'>"+games[g]['description']+"</div><br>";
 			document.getElementById("game_result").innerHTML += "<div class='tags'>";
+			
 			for (var cat in games[g]['categories'])
 			{
-				document.getElementById("game_result").innerHTML += "<a href='categories/"+games[g]['categories'][cat]+".html'>("+games[g]['categories'][cat]+")</a> ";
+				for (var c in categories)
+				{
+					if (!gcResults.includes(c))
+					{
+						if (c == games[g]['categories'][cat])
+						{
+							gcResults.push(c);
+						}
+					}
+				}
 			}
+			for (var i = 0; i < games[g]['categories'].length; i ++)
+			{
+				if (gcResults.includes(games[g]['categories'][i]))
+				{
+					document.getElementById("game_result").innerHTML += "<a href="+categories[games[g]['categories'][i]]['link']+">("+games[g]['categories'][i]+")</a> ";
+				}
+				else
+				{
+					document.getElementById("game_result").innerHTML += "("+games[g]['categories'][i]+") ";
+				}
+			}
+			
 			for (var asp in games[g]['aspects'])
 			{
-				document.getElementById("game_result").innerHTML += "<a href='aspects/"+games[g]['aspects'][asp]+".html'>["+games[g]['aspects'][asp]+"]</a> ";
+				for (var a in aspects)
+				{
+					if (!gaResults.includes(a))
+					{
+						if (a == games[g]['aspects'][asp])
+						{
+							gaResults.push(a);
+						}
+					}
+				}
 			}
+			for (var i = 0; i < games[g]['aspects'].length; i ++)
+			{
+				if (gaResults.includes(games[g]['aspects'][i]))
+				{
+					document.getElementById("game_result").innerHTML += "<a href="+aspects[games[g]['aspects'][i]]['link']+">["+games[g]['aspects'][i]+"]</a> ";
+				}
+				else
+				{
+					document.getElementById("game_result").innerHTML += "["+games[g]['aspects'][i]+"] ";
+				}
+			}
+			var gcResults = [];
+			var gaResults = [];
 			document.getElementById("game_result").innerHTML += "</div></li><br><br></div>\n";
         }
 	}
