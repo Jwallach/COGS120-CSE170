@@ -4,6 +4,8 @@ $( document ).ready(function() {
     var game = gameMap[document.getElementById("game_title").innerHTML];
     
     
+    document.getElementById("description").innerHTML += game["description"];
+    
     var aspects = game["aspects"];
     for (var x = 0; x < aspects.length; x ++)
     {
