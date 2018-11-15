@@ -44,7 +44,7 @@ $( document ).ready(function() {
         }
         else
         {
-            document.getElementById("similar_games").innerHTML += "<li>" + smiliar[x] + "</li>";
+            document.getElementById("similar_games").innerHTML += "<li>" + similar[x] + "</li>";
         }
     }
     
