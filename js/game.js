@@ -6,7 +6,7 @@ $( document ).ready(function() {
     //Populate fields with json information
     var game = gameMap[document.getElementById("game_title").innerHTML];
     
-    
+    document.getElementById("game_title").innerHTML = game["title"];
     document.getElementById("description").innerHTML += game["description"];
     
     var aspectList = game["aspects"];
@@ -14,7 +14,7 @@ $( document ).ready(function() {
     {
         if (aspectList[x] in aspectMap)
         {
-            document.getElementById("aspects").innerHTML += "<li><a href=" + aspectMap[aspectList[x]] + ">" + aspectList[x] + "</a></li>";
+            document.getElementById("aspects").innerHTML += "<li><a href=" + aspectMap[aspectList[x]]["link"] + ">" + aspectMap[aspectList[x]]["title"] + "</a></li>";
         }
         else
         {
@@ -27,7 +27,7 @@ $( document ).ready(function() {
     {
         if (categoryList[x] in categoryMap)
         {
-            document.getElementById("categories").innerHTML += "<li><a href=" + categoryMap[aspectList[x]] + ">" + categoryList[x] + "</a></li>";
+            document.getElementById("categories").innerHTML += "<li><a href=" + categoryMap[categoryList[x]]["link"] + ">" + categoryMap[categoryList[x]]["title"] + "</a></li>";
         }
         else
         {
@@ -40,11 +40,11 @@ $( document ).ready(function() {
     {
         if (similar[x] in gameMap)
         {
-            document.getElementById("similar_games").innerHTML += "<li><a href=" + gameMap[smiliar[x]]["link"] + ">" + similar[x] + "</a></li>";
+            document.getElementById("similar_games").innerHTML += "<li><a href=" + gameMap[smiliar[x]]["link"] + ">" + gameMap[smiliar[x]]["title"] + "</a></li>";
         }
         else
         {
-            document.getElementById("similar_games").innerHTML += "<li>" + similar[x] + "</li>";
+            document.getElementById("similar_games").innerHTML += "<li>" + smiliar[x] + "</li>";
         }
     }
     
