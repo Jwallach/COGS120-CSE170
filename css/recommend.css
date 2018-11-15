@@ -1,7 +1,8 @@
-.body, .html {
+body {
 	height: 100%;
 	margin: 0;
 	font: 400 15px/1.8 "Lato", sans-serif;
+	background-color: rgba(128, 128, 128, 0.5);	
 }
 .search-container {
     max-width: 1000px;
@@ -13,7 +14,5 @@
 }
 .container-fluid {
 	text-align: center;
-	height: 140%;
-	position: absolute;
-	background-color: rgba(128, 128, 128, 0.5);
+	height: 100%;
 }
