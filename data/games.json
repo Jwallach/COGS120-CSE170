@@ -15,7 +15,13 @@
     ],
     "similar_games": [
       "Team Fortress 2"
-    ]
+    ],
+	"pictures": [
+	  "res/game_img/ow_cover.png",
+	  "res/game_img/ow_logo.png",
+	  "res/game_img/ow_screenshot1.png",
+	  "res/game_img/ow_screenshot2.png"
+	]
   },
   "Skyrim": {
     "link": "games/skyrim.html",
@@ -30,7 +36,13 @@
     ],
     "similar_games": [
       "Team Fortress 2"
-    ]
+    ],
+	"pictures": [
+	  "res/game_img/skyrim_cover.png",
+	  "res/game_img/skyrim_logo.png",
+	  "res/game_img/skyrim_screenshot1.png",
+	  "res/game_img/skyrim_screenshot2.png"
+	]
   }
 };
 
