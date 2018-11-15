@@ -1,25 +1,51 @@
 $( document ).ready(function() {
     var gameMap = games;
+    var categoryMap = categories;
+    var aspectMap = aspects;
+    
     //Populate fields with json information
     var game = gameMap[document.getElementById("game_title").innerHTML];
     
     
-    var aspects = game["aspects"];
-    for (var x = 0; x < aspects.length; x ++)
+    document.getElementById("description").innerHTML += game["description"];
+    
+    var aspectList = game["aspects"];
+    for (var x = 0; x < aspectList.length; x ++)
     {
-        document.getElementById("aspects").innerHTML += "<li>" + aspects[x] + "</li>";
+        if (aspectList[x] in aspectMap)
+        {
+            document.getElementById("aspects").innerHTML += "<li><a href=" + aspectMap[aspectList[x]] + ">" + aspectList[x] + "</a></li>";
+        }
+        else
+        {
+            document.getElementById("aspects").innerHTML += "<li>" + aspectList[x] + "</li>";
+        }
     }
     
-    var categories = game["categories"];
-    for (var x = 0; x < categories.length; x ++)
+    var categoryList = game["categories"];
+    for (var x = 0; x < categoryList.length; x ++)
     {
-        document.getElementById("categories").innerHTML += "<li>" + categories[x] + "</li>";
+        if (categoryList[x] in categoryMap)
+        {
+            document.getElementById("categories").innerHTML += "<li><a href=" + categoryMap[aspectList[x]] + ">" + categoryList[x] + "</a></li>";
+        }
+        else
+        {
+            document.getElementById("categories").innerHTML += "<li>" + categoryList[x] + "</li>";
+        }
     }
     
     var similar = game["similar_games"];
     for (var x = 0; x < similar.length; x ++)
     {
-        document.getElementById("similar_games").innerHTML += "<li>" + similar[x] + "</li>";
+        if (similar[x] in gameMap)
+        {
+            document.getElementById("similar_games").innerHTML += "<li><a href=" + gameMap[smiliar[x]]["link"] + ">" + similar[x] + "</a></li>";
+        }
+        else
+        {
+            document.getElementById("similar_games").innerHTML += "<li>" + similar[x] + "</li>";
+        }
     }
     
     
