@@ -2,7 +2,7 @@ body {
 	height: 100%;
 	margin: 0;
 	font: 400 15px/1.8 "Lato", sans-serif;
-	background-color: rgba(128, 128, 128, 0.5);	
+	background-color: rgba(128, 128, 128, 0.5);
 }
 search-container {
     max-width: 1000px;
@@ -18,4 +18,11 @@ search-container {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+}
+.results, .part {
+	float: left;
+	clear: both;
+}
+.list {
+	padding-left: 20px;
 }
