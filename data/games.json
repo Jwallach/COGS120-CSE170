@@ -46,6 +46,24 @@
 	  "res/game_img/skyrim_screenshot1.png",
 	  "res/game_img/skyrim_screenshot2.png"
 	]
+  },
+    "rimworld": {
+	"title": "Rimworld",
+    "link": "games/rimworld.html",
+    "description": "RimWorld is a top-down construction and management simulation video game developed by Ludeon Studios. Games involve crash landing on a rim world and trying to survive with your pawns. Games often degererate in to cannibalism and drug manufacturing in order to survive. Dynamic storyteller options ensure the challenges are presented according to ones playstyle",
+    "categories": [
+      "singleplayer",
+      "sandbox"
+    ],
+    "aspects": [
+      "moddable",
+      "hard_but_fair_gameplay"
+    ],
+    "similar_games": [
+      "dwarf_fortress"
+    ],
+	"images": [
+	]
   }
 };
 
