@@ -53,7 +53,7 @@ $( document ).ready(function() {
     
     
     var categoryMap = categories;
-    console.log(categories);
+
     //if not defined,set the preferences to null
     if (localStorage.getItem("preference_category") === null)
     {
