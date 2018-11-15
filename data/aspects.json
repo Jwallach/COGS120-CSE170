@@ -19,8 +19,7 @@
     "deterministic":{
     "title":"Deterministic Gameplay",
     "link":"aspects/deterministic.html",
-    "description":"Games that have no reliance on random chance. For a given set of actions, the same result will always manifest. An example of this type of game is chess. If the players make the same
-        moves, then this will always lead  to the same board state.",
+    "description":"Games that have no reliance on random chance. For a given set of actions, the same result will always manifest. An example of this type of game is chess. If the players make the samemoves, then this will always lead  to the same board state.",
         "similar_aspects": [
       "hard_but_fair_difficulty"
     ],
