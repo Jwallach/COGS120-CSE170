@@ -32,7 +32,8 @@
     ],
     "aspects": [
       "Moddable",
-      "Open World"
+      "Open World",
+      "Deterministic"
     ],
     "similar_games": [
       "Team Fortress 2"

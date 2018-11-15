@@ -23,7 +23,8 @@ $( document ).ready(function() {
     var pref_category = JSON.parse(localStorage.getItem("preference_category"));
     
     
-    var recommendations = []
+    var recommendations = [];
+    var recommend_aspect = [];
     
     //Loop through all the aspects and select games based on them
     for (var key in pref_aspect)
@@ -37,10 +38,12 @@ $( document ).ready(function() {
                 {
                     //Add it to the recommendations
                     recommendations.push(keyG);
+                    recommend_aspect.push(keyG);
                 }
             }
         }
     }
+    var recommend_category = [];
     
     //loop through categories and do the same
     for (var key in pref_category)
@@ -54,21 +57,42 @@ $( document ).ready(function() {
                 {
                     //Add it to the recommendations
                     recommendations.push(keyG);
+                    recommend_category.push(keyG);
                 }
             }
         }
     }
     
-    for (var x = 0; x < recommendations.length; x ++)
+    var source   = document.getElementById("recommendation_template").innerHTML;
+    var template = Handlebars.compile(source);
+    
+    if (recommend_aspect.length == 0)
     {
-        console.log("TAY");
+      document.getElementById("recommend_aspect").innerHTML += "<p>Could not recommend any games based on your aspects, try and like/dislike more aspects</p>";
+    }
+    else
+    {
+      for (var x = 0; x < recommend_aspect.length; x ++)
+      {
+          var game = gameMap[recommend_aspect[x]];
+          var context = {title: recommend_aspect[x], aspects: game["aspects"], categories: game["categories"]};
+          var html    = template(context);
+          document.getElementById("recommend_aspect").innerHTML += html;
+      }
     }
     
-    
-
-    
-    
-    console.log(recommendations);
-    
-    
+    if (recommend_category.length == 0)
+    {
+      document.getElementById("recommend_category").innerHTML += "<p>Could not recommend any games based on your categories, try and like/dislike more categories</p>";
+    }
+    else
+    {
+      for (var x = 0; x < recommend_category.length; x ++)
+      {
+          var game = gameMap[recommend_category[x]];
+          var context = {title: recommend_category[x], aspects: game["aspects"], categories: game["categories"]};
+          var html    = template(context);
+          document.getElementById("recommend_category").innerHTML += html;
+      }
+    }    
 });
