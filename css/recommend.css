@@ -36,6 +36,7 @@ body {
 	background-color: rgb(255, 255, 255);
 }
 .tags {
+	display: flex;
 	clear: both;
 	background-color: rgb(255, 255, 255);
 	

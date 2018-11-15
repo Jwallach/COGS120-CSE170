@@ -75,7 +75,7 @@ $( document ).ready(function() {
       for (var x = 0; x < recommend_aspect.length; x ++)
       {
           var game = gameMap[recommend_aspect[x]];
-          var context = {title: game["title"], aspects: game["aspects"], categories: game["categories"]};
+          var context = {title: game["title"], description: game["description"], aspects: game["aspects"], categories: game["categories"]};
           var html    = template(context);
           document.getElementById("recommend_aspect").innerHTML += html;
       }
@@ -93,7 +93,7 @@ $( document ).ready(function() {
       for (var x = 0; x < recommend_category.length; x ++)
       {
           var game = gameMap[recommend_category[x]];
-          var context = {title: game["title"], aspects: game["aspects"], categories: game["categories"]};
+          var context = {title: game["title"], description: game["description"], aspects: game["aspects"], categories: game["categories"]};
           var html    = template(context);
           document.getElementById("recommend_category").innerHTML += html;
       }
