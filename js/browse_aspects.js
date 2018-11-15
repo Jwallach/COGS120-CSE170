@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    //Game mapping
+    //Aspect mapping
     var aspectMap = aspects;
     
     for (key in aspectMap)
