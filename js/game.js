@@ -1,4 +1,37 @@
 $( document ).ready(function() {
+    var gameMap = games;
+    //Populate fields with json information
+    var game = gameMap[document.getElementById("game_title").innerHTML];
+    
+    
+    var aspects = game["aspects"];
+    for (var x = 0; x < aspects.length; x ++)
+    {
+        document.getElementById("aspects").innerHTML += "<li>" + aspects[x] + "</li>";
+    }
+    
+    var categories = game["categories"];
+    for (var x = 0; x < categories.length; x ++)
+    {
+        document.getElementById("categories").innerHTML += "<li>" + categories[x] + "</li>";
+    }
+    
+    var similar = game["similar_games"];
+    for (var x = 0; x < similar.length; x ++)
+    {
+        document.getElementById("similar_games").innerHTML += "<li>" + similar[x] + "</li>";
+    }
+    
+    
+    var images = game["images"];
+    for (var x = 0; x < images.length; x ++)
+    {
+        document.getElementById("images").innerHTML += "<div class=\"column\"><a target=\"_blank\" href\"" + images[x] + "\"><img class=\"images\" src=\"" + images[x] + "\"></a></div>";
+    }
+        
+    
+    
+    
     //If game already wish listed, set the text of the wish list to 
     //if not defined,set wishlist to null 
     if (localStorage.getItem("wishlist") === null)
@@ -23,7 +56,6 @@ $( document ).ready(function() {
     {
         document.getElementById("wishlist_game").innerHTML = "Game in Wish List";
     }
-    
 
 });
 
