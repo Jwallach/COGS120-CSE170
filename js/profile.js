@@ -47,7 +47,7 @@ $( document ).ready(function() {
         {
           like = "Disliked";
         }
-        document.getElementById("aspect_preferences").innerHTML += "<h5><a href=" + aspectMap[key] + ">" + key + "</a> | " + like + "</h5>\n"; 
+        document.getElementById("aspect_preferences").innerHTML += "<h5><a href=" + aspectMap[key]["link"] + ">" + aspectMap[key]["title"] + "</a> | " + like + "</h5>\n"; 
       }
     }
     
@@ -77,7 +77,7 @@ $( document ).ready(function() {
         {
           like = "Disliked";
         }
-        document.getElementById("category_preferences").innerHTML += "<h5><a href=" + categoryMap[key] + ">" + key + "</a> | " + like + "</h5>\n"; 
+        document.getElementById("category_preferences").innerHTML += "<h5><a href=" + categoryMap[key]["link"] + ">" + categoryMap[key]["title"] + "</a> | " + like + "</h5>\n"; 
       }
     }
     if (localStorage.getItem("username") === null)
