@@ -16,7 +16,7 @@
     "similar_games": [
       "Team Fortress 2"
     ],
-	"pictures": [
+	"images": [
 	  "res/game_img/ow_cover.png",
 	  "res/game_img/ow_logo.png",
 	  "res/game_img/ow_screenshot1.png",
@@ -38,7 +38,7 @@
     "similar_games": [
       "Team Fortress 2"
     ],
-	"pictures": [
+	"images": [
 	  "res/game_img/skyrim_cover.png",
 	  "res/game_img/skyrim_logo.png",
 	  "res/game_img/skyrim_screenshot1.png",
