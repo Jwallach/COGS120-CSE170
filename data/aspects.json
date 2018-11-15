@@ -1,4 +1,32 @@
   aspects = 
-    {"Hard but Fair Difficulty":"aspects/hard_but_fair.html",
-    "Deterministic": "aspects/deterministic.html"}
-  ;
+    {
+    
+      "hard_but_fair_difficulty": {
+    "title":"Hard but Fair Difficulty",
+    "link": "aspects/hard_but_fair.html",
+    "description": "Difficulty which is designed to be challenging but fair. Failures are the vast majority of the time based on reasonable player mistakes and not pure luck or unfair mechanics. Skilled players are easily and consistently capable of feats such as no-death playthroughs or other feats of skill. Despite this, these type of games are often non-deterministic and feature elements of randomness.Usually featured in single player PVE games.",
+
+    "game_examples": [
+      "rimworld",
+      "dark_souls",
+      "darkest_dungeon"
+    ],
+    "similar_aspects": [
+      "deterministic"
+    ]
+  },
+
+    "deterministic":{
+    "title":"Deterministic Gameplay",
+    "link":"aspects/deterministic.html",
+    "description":"Games that have no reliance on random chance. For a given set of actions, the same result will always manifest. An example of this type of game is chess. If the players make the samemoves, then this will always lead  to the same board state.",
+        "similar_aspects": [
+      "hard_but_fair_difficulty"
+    ],
+    "game_examples" : [
+    "chess",
+    "overwatch",
+    "league_of_legends"
+    ]
+    }
+};

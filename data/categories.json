@@ -1,3 +1,16 @@
     categories = 
-    {"Singleplayer": "categories/singleplayer.html"}
-    ;
+    {
+        
+    "singleplayer": {
+    "title":"Single Player Gameplay",
+    "link": "categories/singleplayer.html",
+    "description": "Games which are designed to be played by a single person, typically featuring PVE gameplay. The enemies in said game are typically controlled by AI or arise directly from the player's own actions",
+
+    "game_examples": [
+      "rimworld",
+      "dark_souls",
+      "skyrim"
+    ]
+  }
+    
+};
