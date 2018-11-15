@@ -18,19 +18,13 @@
 	<!-- End of Navigation -->
     
     <div class="aspect_info">
-    <h3 class="aspect_title">Hard but Fair Difficulty</h3>
-    <p class="aspect_desc">
-        Difficulty which is designed to be challenging but fair. Failures are the vast majority of the time based on reasonable player mistakes and not pure luck or unfair mechanics. Skilled players are
-        easily and consistently capable of feats such as no-death playthroughs or other feats of skill. Despite this, these type of games are often non-deterministic and feature elements of
-        randomness.Usually featured in single player PVE games.
-    </p>
-    
-    <h3>Examples of games with this aspect</h3>
-    <ol>
-      <li>Dark Souls</li>
-      <li>Rimworld</li>
-      <li>Darkest Dungeon</a></li>
-    </ol>
+        <h3 id="aspect_title">hard_but_fair_difficulty</h3>
+        <p id="aspect_description">
+        </p>
+        
+        <h3>Examples of games with this aspect</h3>
+        <ul id="game_examples">
+        </ul>
     
     </div>
     
@@ -40,10 +34,13 @@
  </body>
 
   <!-- JS -->
+  <script type="text/javascript" id="games" src="data/games.json"></script>
+  <script type="text/javascript" id="categories" src="data/categories.json"></script>
+  <script type="text/javascript" id="aspects" src="data/aspects.json"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
-  
+  <script type="text/javascript" src="js/aspect.js"></script>
     <script type="text/javascript">
     $(document).ready(function() {
     $('#nav-container').load('navbar.html');

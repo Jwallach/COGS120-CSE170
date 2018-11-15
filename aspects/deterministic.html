@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/aspect_entry.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Hard but Fair Difficulty</title>
+    <title>Deterministic Gameplay</title>
     
 </head>
 
@@ -18,18 +18,13 @@
 	<!-- End of Navigation -->
     
     <div class="aspect_info">
-    <h3 class="aspect_title">Deterministic</h3>
-    <p class="aspect_desc">
-        Games that have no reliance on random chance. For a given set of actions, the same result will always manifest. An example of this type of game is chess. If the players make the same
-        moves, then this will always lead  to the same board state.
-    </p>
-    
-    <h3>Examples of games with this aspect</h3>
-    <ol>
-      <li>Overwatch</li>
-      <li>Chess</li>
-      <li>League of Legends</a></li>
-    </ol>
+        <h3 id="aspect_title">deterministic</h3>
+        <p id="aspect_description">
+        </p>
+        
+        <h3>Examples of games with this aspect</h3>
+        <ul id="game_examples">
+        </ul>
     
     </div>
     
@@ -39,10 +34,13 @@
  </body>
 
   <!-- JS -->
+  <script type="text/javascript" id="games" src="data/games.json"></script>
+  <script type="text/javascript" id="categories" src="data/categories.json"></script>
+  <script type="text/javascript" id="aspects" src="data/aspects.json"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
-  
+  <script type="text/javascript" src="js/aspect.js"></script>
     <script type="text/javascript">
     $(document).ready(function() {
     $('#nav-container').load('navbar.html');
