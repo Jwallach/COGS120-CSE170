@@ -29,9 +29,9 @@
     "description":"Games that have good mod support. Modders can often add new mechanics and otherwise greatly expand the content of the game. Generally has few hard coded aspects and most of the parts of the game can be modified",
 
     "game_examples" : [
-    "chess",
-    "overwatch",
-    "league_of_legends"
+    "rimworld",
+    "factorio",
+    "minecraft"
     ]
     }
 };
