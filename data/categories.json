@@ -9,7 +9,11 @@
     "game_examples": [
       "rimworld",
       "dark_souls",
-      "skyrim"
+      "skyrim",
+	  "hearthstone",
+	  "rdr2",
+	  "witcher",
+	  "xcom"
     ]
   },
   "sandbox": {

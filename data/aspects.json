@@ -9,7 +9,9 @@
     "game_examples": [
       "rimworld",
       "dark_souls",
-      "darkest_dungeon"
+      "darkest_dungeon",
+	  "mh",
+	  "xcom"
     ]
   },
 
@@ -31,7 +33,8 @@
     "game_examples" : [
     "rimworld",
     "factorio",
-    "minecraft"
+    "minecraft",
+	"witcher"
     ]
     }
 };

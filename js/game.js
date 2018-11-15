@@ -40,7 +40,7 @@ $( document ).ready(function() {
     {
         if (similar[x] in gameMap)
         {
-            document.getElementById("similar_games").innerHTML += "<li><a href=" + gameMap[smiliar[x]]["link"] + ">" + gameMap[smiliar[x]]["title"] + "</a></li>";
+            document.getElementById("similar_games").innerHTML += "<li><a href=" + gameMap[similar[x]]["link"] + ">" + gameMap[similar[x]]["title"] + "</a></li>";
         }
         else
         {
