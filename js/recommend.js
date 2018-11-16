@@ -74,8 +74,11 @@ $( document ).ready(function() {
     {
       for (var x = 0; x < recommend_aspect.length; x ++)
       {
+
+         
           var game = gameMap[recommend_aspect[x]];
-          var context = {title: game["title"], description: game["description"], aspects: game["aspects"], categories: game["categories"]};
+          var gameLink = "<a href=" + game["link"] + ">" + game["title"] + "</a>";
+          var context = {title: gameLink, description: game["description"], aspects: game["aspects"], categories: game["categories"]};
           var html    = template(context);
           document.getElementById("recommend_aspect").innerHTML += html;
       }
