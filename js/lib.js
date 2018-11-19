@@ -1,6 +1,6 @@
 //MAKE SURE THE BUTTON THAT NEEDS TO BE BEDITED HAS THE ID wishlist_game_ + game_key
 //RETURNS TRUE IF ADDED TI WISHLITS, FALSE IF REMOVED
-function (game_key)
+function modify_wishlist(game_key)
 {
     //if not defined,set wishlist to null 
     if (localStorage.getItem("wishlist") === null)
