@@ -106,7 +106,7 @@ $( document ).ready(function() {
           }
 
 
-          var context = {title: gameLink, description: game["description"], aspects: aspectLinks, categories: categoryLinks};
+          var context = {title: gameLink, description: game["description"], aspects: aspectLinks, categories: categoryLinks, game_key: recommend_aspect[x]};
           var html    = template(context);
           document.getElementById("recommend_aspect").innerHTML += html;
       }
@@ -155,7 +155,7 @@ $( document ).ready(function() {
           }
 
 
-          var context = {title: gameLink, description: game["description"], aspects: aspectLinks, categories: categoryLinks};
+          var context = {title: gameLink, description: game["description"], aspects: aspectLinks, categories: categoryLinks, game_key: recommend_category[x]};
           var html    = template(context);
           document.getElementById("recommend_category").innerHTML += html;
       }
