@@ -57,3 +57,9 @@ body {
 .col {
 	padding-top: 50px;
 }
+.wishlist-btn {
+	text-align: center;
+	width: 100%;
+	font-weight: bold;
+	background-color: rgba(132, 160, 219, 0.5);
+}
