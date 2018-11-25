@@ -26,6 +26,49 @@
       "cataclysm_dda",
       "skyrim"
     ]
+  },
+  "multiplayer": {
+    "title":"Multiplayer Gameplay",
+    "link": "categories/multiplayer.html",
+    "description": "Games that are designed to be played or can be played with multiple players, either against each other or together against a computer.",
+
+    "game_examples": [
+      "overwatch",
+      "hearthstone",
+      "mh"
+    ]
+    },
+  "fps": {
+    "title":"First Person Shooter",
+    "link": "categories/fps.html",
+    "description": "Games that are played in first person perspective and whose core gameplay loop generally involves shooting enemies. FPS can vary between realistic military simulations to fantastical colorful super soldiers firing rainbow blaster cannons, and from multiplayer competitive experiences to PVE gameplay",
+
+    "game_examples": [
+      "overwatch",
+      "team_fortress_2"
+    ]
+    },
+  "rpg": {
+    "title":"Role Playing Game",
+    "link": "categories/rpg.html",
+    "description": "Games in which each participant assumes the role of a character, generally in a fantasy or science fiction setting, that can interact within the game's imaginary world. Generally involve character statistics and skills such as strength, character level, and lockpicking skill as a core component of gameplay",
+
+    "game_examples": [
+      "skyrim",
+      "darkest_dungeon",
+      "dark_souls"
+    ]
+  },
+    "turn_based": {
+    "title":"Turn Based Gameplay",
+    "link": "categories/turn_based.html",
+    "description": "Games in which each participant takes turns in gameplay. For example, in chess black and white both take turns one after another moving a piece until the game concludes. These games generally let you take your time and think about the consequences of said decision for as long as one needs.",
+
+    "game_examples": [
+      "darkest_dungeon",
+      "hearthstone",
+      "xcom"
+    ]
   }
     
 };
