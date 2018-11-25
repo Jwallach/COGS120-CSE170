@@ -5,7 +5,7 @@ $( document ).ready(function() {
     for (key in aspectMap)
     {
 		document.getElementById("aspect_list").innerHTML += "<button class='collapsible'>"+aspectMap[key]["title"]+"</button>";
-		document.getElementById("aspect_list").innerHTML += "<div class='content'><p>"+aspectMap[key]["description"]+"<br><a href=" + aspectMap[key]["link"] + ">Learn More</a></p>";
+		document.getElementById("aspect_list").innerHTML += "<div class='content'><p class='description'>"+aspectMap[key]["description"]+"<br><a href=" + aspectMap[key]["link"] + ">Learn More</a></p>";
 	}
 	
 	var coll = document.getElementsByClassName("collapsible");
