@@ -34,7 +34,7 @@ $( document ).ready(function() {
             for (var keyG in games)
             {
                 //If game has the aspect and is not already recommended
-                if (games[keyG]["aspects"].includes(key) && !recommendations.includes(keyG))
+                if (games[keyG]["aspects"].includes(key) && !recommendations.includes(keyG) && !(keyG in pref_aspect && pref_aspect[keyG] === "Disliked"))
                 {
                     //Add it to the recommendations
                     recommendations.push(keyG);
@@ -53,7 +53,7 @@ $( document ).ready(function() {
             for (var keyG in games)
             {
                 //If game has the aspect and is not already recommended
-                if (games[keyG]["categories"].includes(key) && !recommendations.includes(keyG))
+                if (games[keyG]["categories"].includes(key) && !recommendations.includes(keyG) && !(keyG in pref_category && pref_category[keyG] === "Disliked"))
                 {
                     //Add it to the recommendations
                     recommendations.push(keyG);
