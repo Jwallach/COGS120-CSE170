@@ -272,7 +272,7 @@ games =
   "nethack": {
 	"title": "Nethack",
     "link": "games/nethack.html",
-    "description": "NetHack is a single-player roguelike video game originally released in 1987 with ASCII graphics. NetHack's dungeon spans about 50 primary levels, of which most are randomly generated when the player character first encounters them. A typical level contains a way "up" and "down" (these may be stairways, ladders, trapdoors etc.), along with several "rooms" joined by corridors. The "rooms" are randomly generated rectangles (as opposed to the linear corridors) and may contain features such as altars, shops, fountains, traps, thrones, pools of water, and sinks based upon the randomly generated features of the room. Some "special" levels are of fixed design in every game session.",
+    "description": "NetHack is a single-player roguelike video game originally released in 1987 with ASCII graphics. NetHack's dungeon spans about 50 primary levels, of which most are randomly generated when the player character first encounters them. A typical level contains a way up and down (these may be stairways, ladders, trapdoors etc.), along with several rooms joined by corridors. The rooms are randomly generated rectangles (as opposed to the linear corridors) and may contain features such as altars, shops, fountains, traps, thrones, pools of water, and sinks based upon the randomly generated features of the room. Some special levels are of fixed design in every game session.",
     "categories": [
 	  "turn_based",
 	  "rpg"
