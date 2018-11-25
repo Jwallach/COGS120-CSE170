@@ -12,24 +12,23 @@ body {
 	max-height: 50px;
 	max-width: 300px;
 }
-#aspect_intro {
+#category_intro {
     margin-top: 5em;
     text-align: center;
     margin-left: 5em;
     margin-right: 5em;
     
 }
-#aspect_list {
+#category_list {
     margin-top: 5em;
     margin-left: 5em;
     margin-right: 5em;
 }
-
 .collapsible {
     background-color: rgb(128, 128, 128);	
     color: white;
     cursor: pointer;
-    padding: 18px;
+	padding: 10px;
     width: 100%;
     border: none;
     text-align: left;
@@ -42,8 +41,11 @@ body {
 }
 
 .content {
-    padding: 0 18px;
+    padding: 5px 20px;
     display: none;
     overflow: hidden;
     background-color: rgba(132, 160, 219, 0.5);	
+}
+.description {
+	padding-top: 10px;
 }
