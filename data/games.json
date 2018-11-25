@@ -210,6 +210,83 @@ games =
 	"images": [
 	  "res/game_img/xcom_cover.png"
 	]
+  },
+  "team_fortress_2": {
+	"title": "Team Fortress 2",
+    "link": "games/team_fortress_2.html",
+    "description": "Team Fortress 2 (TF2) is a team-based multiplayer first-person shooter video game developed and published by Valve Corporation. Players can choose to play as one of nine character classes in these teams, each with his own unique strengths, weaknesses, and weapons. In order to accomplish objectives efficiently, a balance of these classes is required due to how these strengths and weaknesses interact with each other in a team-based environment.",
+    "categories": [
+      "multiplayer",
+	  "fps"
+    ],
+    "aspects": [
+      "competitive",
+      "deterministic"
+    ],
+    "similar_games": [
+      "overwatch"
+    ],
+	"images": [
+	]
+	},
+  "cataclysm_dda": {
+	"title": "Cataclysm: Dark Days Ahead",
+    "link": "games/cataclysm_dda.html",
+    "description": "Cataclysm: Dark Days Ahead, or CDDA, is an open source survival horror roguelike video game. Cataclysm: Dark Days Ahead is a fork of the original game Cataclysm. The games most unique features are fully custom tile by tile vehicles and its intricate crafting system. Players play as a survivor of the zombie apocalypse, trying to survive",
+    "categories": [
+      "sandbox",
+	  "turn_based"
+    ],
+    "aspects": [
+      "hard_but_fair_difficulty",
+      "open_world",
+      "moddable"
+    ],
+    "similar_games": [
+      "nethack",
+      "skyrim"
+    ],
+	"images": [
+	]
+	},
+  "dwarf_fortress": {
+	"title": "Dwarf Fortress",
+    "link": "games/dwarf_fortress.html",
+    "description": "Dwarf Fortress (officially called Slaves to Armok: God of Blood Chapter II: Dwarf Fortress) is a part construction and management simulation, part roguelike, indie video game created by Tarn and Zach Adams. The game features extensive simulations such as the thoughts and aspirations of individual historical figures, extensive limb simulations, and general insanity.",
+    "categories": [
+      "sandbox",
+	  "turn_based",
+	  "rpg"
+    ],
+    "aspects": [
+      "hard_but_fair_difficulty",
+      "moddable"
+    ],
+    "similar_games": [
+      "nethack",
+      "rimworld"
+    ],
+	"images": [
+	]
+	},
+  "nethack": {
+	"title": "Nethack",
+    "link": "games/nethack.html",
+    "description": "NetHack is a single-player roguelike video game originally released in 1987 with ASCII graphics. NetHack's dungeon spans about 50 primary levels, of which most are randomly generated when the player character first encounters them. A typical level contains a way "up" and "down" (these may be stairways, ladders, trapdoors etc.), along with several "rooms" joined by corridors. The "rooms" are randomly generated rectangles (as opposed to the linear corridors) and may contain features such as altars, shops, fountains, traps, thrones, pools of water, and sinks based upon the randomly generated features of the room. Some "special" levels are of fixed design in every game session.",
+    "categories": [
+	  "turn_based",
+	  "rpg"
+    ],
+    "aspects": [
+      "hard_but_fair_difficulty",
+      "moddable",
+      "rng"
+    ],
+    "similar_games": [
+      "cataclysm_dda"
+    ],
+	"images": [
+	]
   }
 };
 
