@@ -34,11 +34,34 @@ $( document ).ready(function() {
             for (var keyG in games)
             {
                 //If game has the aspect and is not already recommended
-                if (games[keyG]["aspects"].includes(key) && !recommendations.includes(keyG) && !(keyG in pref_aspect && pref_aspect[keyG] === "Disliked"))
+                if (games[keyG]["aspects"].includes(key) && !recommendations.includes(keyG))
                 {
-                    //Add it to the recommendations
-                    recommendations.push(keyG);
-                    recommend_aspect.push(keyG);
+                    var disliked = false;
+                    for (var x = 0; x < games[keyG]["aspects"].length; x++)
+                    {
+                        if (games[keyG]["aspects"][x] in pref_aspect && pref_aspect[games[keyG]["aspects"][x]] === "Disliked")
+                        {
+                            disliked = true;
+                            break;
+                        }
+                        
+                    }
+                    for (var x = 0; x < games[keyG]["categories"].length; x++)
+                    {
+                        if (games[keyG]["categories"][x] in pref_category && pref_category[games[keyG]["categories"][x]] === "Disliked")
+                        {
+                            disliked = true;
+                            break;
+                        }
+                    }
+                    
+                    if (!disliked)
+                    {
+                      //Add it to the recommendations
+                      recommendations.push(keyG);
+                      recommend_aspect.push(keyG);
+                    }
+                        
                 }
             }
         }
@@ -53,11 +76,33 @@ $( document ).ready(function() {
             for (var keyG in games)
             {
                 //If game has the aspect and is not already recommended
-                if (games[keyG]["categories"].includes(key) && !recommendations.includes(keyG) && !(keyG in pref_category && pref_category[keyG] === "Disliked"))
+                if (games[keyG]["categories"].includes(key) && !recommendations.includes(keyG))
                 {
-                    //Add it to the recommendations
-                    recommendations.push(keyG);
-                    recommend_category.push(keyG);
+                    var disliked = false;
+                    for (var x = 0; x < games[keyG]["aspects"].length; x ++)
+                    {
+                        if (games[keyG]["aspects"][x] in pref_aspect && pref_aspect[games[keyG]["aspects"][x]] === "Disliked")
+                        {
+                            disliked = true;
+                        }
+                        
+                    }
+                    for (var x = 0; x < games[keyG]["categories"].length; x ++)
+                    {
+                        if (games[keyG]["categories"][x] in pref_category && pref_category[games[keyG]["categories"][x]] === "Disliked")
+                        {
+                            disliked = true;
+                        }
+                        
+                    }
+                    
+                    if (!disliked)
+                    {
+                      //Add it to the recommendations
+                      recommendations.push(keyG);
+                      recommend_category.push(keyG);
+                    }
+
                 }
             }
         }
