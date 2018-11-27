@@ -88,6 +88,16 @@
       "hearthstone",
       "pokemon"
     ]
+  },
+    "mobile": {
+    "title":"Multiplayer Online Battle Arena (MOBA)",
+    "link": "categories/moba.html",
+    "description": "Mobas are played in matches between two teams of five players, with each team occupying and defending their own separate base on the map. Each of the ten players independently controls a powerful character, known as a hero, who all have unique abilities and differing styles of play. During a match, players collect experience points and items for their heroes to successfully defeat the opposing team's heroes in player versus player combat. A team wins by being the first to destroy a large structure located in the opposing team's base. Players often kill creeps either neutral ones between the lanes or ones in the lanes that march towards the enemy base to acquire experience and items to defeat the enemy team and win the game.",
+
+    "game_examples": [
+      "league_of_legends",
+      "pokemon"
+    ]
   }
     
 };
