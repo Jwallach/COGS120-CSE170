@@ -420,7 +420,7 @@ games =
   },
   "magic": {
 	"title": "Magic the Gathering",
-    "link": "games/.html",
+    "link": "games/magic.html",
     "description": "Magic: The Gathering is both a trading card and digital collectible card game created by Richard Garfield. Magic was the first trading card game created and it continues to thrive.",
     "categories": [
       "singleplayer",
