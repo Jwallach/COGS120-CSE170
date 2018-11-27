@@ -13,7 +13,10 @@
 	  "hearthstone",
 	  "rdr2",
 	  "witcher",
-	  "xcom"
+	  "xcom",
+	  "fallout",
+	  "gwent",
+	  "magic"
     ]
   },
   "sandbox": {
@@ -24,7 +27,9 @@
     "game_examples": [
       "rimworld",
       "cataclysm_dda",
-      "skyrim"
+      "skyrim",
+	  "minecraft",
+	  "terraria"
     ]
   },
   "multiplayer": {
@@ -35,7 +40,21 @@
     "game_examples": [
       "overwatch",
       "hearthstone",
-      "mh"
+	  "pokemon",
+	  "destiny",
+	  "rdr2",
+      "mh",
+	  "team_fortress_2",
+	  "ingress",
+	  "minecraft",
+	  "terraria",
+	  "gwent",
+	  "magic",
+	  "dota2",
+	  "league_of_legends",
+	  "warframe",
+	  "gta",
+	  "dark_souls"
     ]
     },
   "fps": {
@@ -67,7 +86,9 @@
     "game_examples": [
       "darkest_dungeon",
       "hearthstone",
-      "xcom"
+      "xcom",
+	  "gwent",
+	  "magic"
     ]
   },
     "card_game": {
@@ -76,7 +97,9 @@
     "description": "Games which are played using cards, ranging from traditional 52 card set such as poker to less traditional cards featuring monsters and spells. These game are usually turn based an often multiplayer, having 2 players pit their decks against each other",
 
     "game_examples": [
-      "hearthstone"
+      "hearthstone",
+	  "gwent",
+	  "magic"
     ]
   },
     "mobile": {
@@ -86,17 +109,18 @@
 
     "game_examples": [
       "hearthstone",
-      "pokemon"
+      "pokemon",
+	  "ingress"
     ]
   },
-    "mobile": {
+    "moba": {
     "title":"Multiplayer Online Battle Arena (MOBA)",
     "link": "categories/moba.html",
     "description": "Mobas are played in matches between two teams of five players, with each team occupying and defending their own separate base on the map. Each of the ten players independently controls a powerful character, known as a hero, who all have unique abilities and differing styles of play. During a match, players collect experience points and items for their heroes to successfully defeat the opposing team's heroes in player versus player combat. A team wins by being the first to destroy a large structure located in the opposing team's base. Players often kill creeps either neutral ones between the lanes or ones in the lanes that march towards the enemy base to acquire experience and items to defeat the enemy team and win the game.",
 
     "game_examples": [
       "league_of_legends",
-      "pokemon"
+      "dota2"
     ]
   }
     

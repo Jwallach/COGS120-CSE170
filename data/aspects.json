@@ -11,7 +11,10 @@
       "dark_souls",
       "darkest_dungeon",
 	  "mh",
-	  "xcom"
+	  "xcom",
+	  "cataclysm_dda",
+	  "dwarf_fortress",
+	  "nethack"
     ]
   },
 
@@ -20,9 +23,13 @@
     "link":"aspects/deterministic.html",
     "description":"Games that have no reliance on random chance. For a given set of actions, the same result will always manifest. An example of this type of game is chess. If the players make the samemoves, then this will always lead  to the same board state.",
     "game_examples" : [
-    "chess",
     "overwatch",
-    "league_of_legends"
+	"skyrim",
+	"witcher",
+	"fallout",
+	"morrowind",
+    "league_of_legends",
+	"dota2"
     ]
     },
     "moddable":{
@@ -32,9 +39,14 @@
 
     "game_examples" : [
     "rimworld",
-    "factorio",
+	"skyrim",
     "minecraft",
-	"witcher"
+	"terraria",
+	"witcher",
+	"gta",
+	"cataclysm_dda",
+	"dwarf_fortress",
+	"nethack"
     ]
     },
     "competitive":{
@@ -44,8 +56,13 @@
 
     "game_examples" : [
     "overwatch",
+	"team_fortress_2",
     "dota2",
-    "league_of_legends"
+    "league_of_legends",
+	"hearthstone",
+	"gwent",
+	"magic",
+	"destiny"
     ]
     },
     "open_world":{
@@ -56,7 +73,16 @@
     "game_examples" : [
     "skyrim",
     "witcher",
-    "minecraft"
+    "minecraft",
+	"teraria",
+	"rdr2",
+	"destiny",
+	"warframe",
+	"cataclysm_dda",
+	"fallout",
+	"morrowind",
+	"gta",
+	"dark_souls"
     ]
     },
     "rng":{
@@ -67,7 +93,14 @@
     "game_examples" : [
     "cataclysm_dda",
     "xcom",
-    "darkest_dungeon"
+    "darkest_dungeon",
+	"nethack",
+	"hearthstone",
+	"gwent",
+	"magic",
+	"warframe",
+	"dark_souls",
+	"pokemon"
     ]
   },
     "story_driven": {
@@ -76,9 +109,13 @@
     "description": "Games that feature story as a principal component of the design of the game. Great care is taken to make the world feel alive and fleshed out, in contrast where story is merely an afterthough for the gameplay.",
 
     "game_examples": [
-      "darkest_dungeon",
       "skyrim",
-      "witcher"
+      "witcher",
+	  "rdr2",
+	  "xcom",
+	  "fallout",
+	  "morrowind",
+	  "gta"
     ]
   },
     "ar": {
@@ -87,8 +124,8 @@
     "description": "Games that feature augmented reality, or superimposing game objects on a picture of the real world. For example, an RPG might have the monster the player is fighting appear in front of whatever a smartphone camera has displayed",
 
     "game_examples": [
-      "dota2",
-      "league_of_legends"
+      "pokemon",
+      "ingress"
     ]
   }
 };

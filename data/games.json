@@ -33,7 +33,8 @@ games =
     "aspects": [
       "moddable",
       "open_world",
-      "deterministic"
+      "deterministic",
+	  "story_driven"
     ],
     "similar_games": [
       "morrowind",
@@ -74,7 +75,8 @@ games =
     "categories": [
       "singleplayer",
 	  "multiplayer",
-	  "card_game"
+	  "card_game",
+	  "mobile"
     ],
     "aspects": [
       "competitive",
@@ -97,7 +99,7 @@ games =
 	  "mobile"
     ],
     "aspects": [
-      "augmented_reality",
+      "ar",
 	  "rng"
     ],
     "similar_games": [
@@ -158,7 +160,8 @@ games =
     "aspects": [
       "moddable",
       "open_world",
-      "deterministic"
+      "deterministic",
+	  "story_driven"
     ],
     "similar_games": [
       "skyrim",
@@ -200,7 +203,8 @@ games =
     ],
     "aspects": [
 	  "hard_but_fair_difficulty",
-      "rng"
+      "rng",
+	  "story_driven"
     ],
     "similar_games": [
       "darkest_dungeon"
@@ -267,6 +271,7 @@ games =
       "rimworld"
     ],
 	"images": [
+		"res/game_img/dwarf_fortress_cover.png",
 		"res/game_img/dwarf_fortress_logo.png"
 	]
 	},
@@ -301,7 +306,8 @@ games =
     "aspects": [
       "moddable",
       "open_world",
-      "deterministic"
+      "deterministic",
+	  "story_driven"
     ],
     "similar_games": [
       "morrowind",
@@ -323,7 +329,8 @@ games =
     "aspects": [
       "moddable",
       "open_world",
-      "deterministic"
+      "deterministic",
+	  "story_driven"
     ],
     "similar_games": [
       "morrowind",
@@ -343,7 +350,7 @@ games =
 	  "mobile"
     ],
     "aspects": [
-      "augmented_reality"
+      "ar"
     ],
     "similar_games": [
       "pokemon"
@@ -358,7 +365,7 @@ games =
     "description": "Minecraft is a sandbox video game that game allows players to build with a variety of different blocks in a 3d procedurally generated world, requiring creativity from players. Other activities in the game include exploration, resource gathering, crafting, and combat.",
     "categories": [
       "multiplayer",
-	  
+	  "sandbox"
     ],
     "aspects": [
       "moddable",
@@ -374,10 +381,10 @@ games =
   "terraria": {
 	"title": "Terraria",
     "link": "games/terraria.html",
-    "description": "",
+    "description": "Terraria is a 2D action-adventure sandbox video game developed by Re-Logic. Gameplay of Terraria features exploration, crafting, building, and combat with a variety of creatures in a procedurally generated 2D world.",
     "categories": [
       "multiplayer",
-	  
+	  "sandbox"
     ],
     "aspects": [
       "moddable",
@@ -391,9 +398,9 @@ games =
 	]
   },
   "gwent": {
-	"title": "Gwent",
+	"title": "Gwent: The Witcher Card Game",
     "link": "games/gwent.html",
-    "description": "",
+    "description": "Gwent is a turn-based card game between two players, with each game taking three rounds. Each player must play one card each turn from a deck of at least twenty-five cards. Each deck belongs to a faction that offers different play styles. Each faction has different leaders who each have individual abilities. As Gwent does not use a mana system like most traditional CCGs, card advantage is often what wins the game. ",
     "categories": [
       "singleplayer",
 	  "multiplayer",
@@ -412,9 +419,9 @@ games =
 	]
   },
   "magic": {
-	"title": "",
+	"title": "Magic the Gathering",
     "link": "games/.html",
-    "description": "",
+    "description": "Magic: The Gathering is both a trading card and digital collectible card game created by Richard Garfield. Magic was the first trading card game created and it continues to thrive.",
     "categories": [
       "singleplayer",
 	  "multiplayer",
@@ -435,29 +442,33 @@ games =
   "dota2": {
 	"title": "Dota 2",
     "link": "games/dota2.html",
-    "description": "",
+    "description": "Dota 2 is a multiplayer online battle arena (MOBA) video game in which two teams of five players compete to collectively destroy a large structure defended by the opposing team known as the Ancient, whilst defending their own.",
     "categories": [
-      "multiplayer"
+      "multiplayer",
+	  "moba"
     ],
     "aspects": [
       "competitive",
+	  "deterministic"
     ],
     "similar_games": [
       "league_of_legends"
     ],
 	"images": [
-	  "res/game_img/dota_cover.png"
+	  "res/game_img/dota2_cover.png"
 	]
   },
   "league_of_legends": {
 	"title": "League of Legends",
     "link": "games/league_of_legends.html",
-    "description": "",
+    "description": "League of Legends is a 3D, third-person multiplayer online battle arena (MOBA) game in which players control characters called champions, chosen or assigned every match, who each have a set of unique abilities. Champions begin every match at a low level, and then gain experience over the course of the match to achieve a maximum level of 18.",
     "categories": [
-      "multiplayer"
+      "multiplayer",
+	  "moba"
     ],
     "aspects": [
       "competitive",
+	  "deterministic"
     ],
     "similar_games": [
       "dota2"
@@ -469,7 +480,7 @@ games =
   "warframe": {
 	"title": "Warframe",
     "link": "games/warframe.html",
-    "description": "",
+    "description": "Warframe is an online action game that includes elements of shooters and stealth games. The player creates their Tenno character, which includes a basic armor unit called a Warframe which provides the player with special abilities, basic weapons (a melee weapon, guns, and sidearms), and a ship.",
     "categories": [
       "multiplayer"
     ],
@@ -487,11 +498,10 @@ games =
   "gta": {
 	"title": "Grand Theft Auto V",
     "link": "games/gta.html",
-    "description": "",
+    "description": "Grand Theft Auto V is an action-adventure game played from either a third-person or first-person perspective. Players complete missions—linear scenarios with set objectives—to progress through the story. Outside of the missions, players may freely roam the open world.",
     "categories": [
       "singleplayer",
-	  "multiplayer",
-	  "fps"
+	  "multiplayer"
     ],
     "aspects": [
       "open_world",
@@ -508,7 +518,7 @@ games =
   "dark_souls": {
 	"title": "Dark Souls",
     "link": "games/dark_souls.html",
-    "description": "",
+    "description": "Dark Souls is a third-person action role-playing game. The core mechanic of the game is exploration. Players are encouraged by the game to proceed with caution, learn from past mistakes, or find alternative areas to explore. Dark Souls takes place in a large and continuous open world environment, connected through a central hub area.",
     "categories": [
       "multiplayer",
       "rpg"
@@ -522,13 +532,13 @@ games =
       "mh"
     ],
 	"images": [
-	  "res/game_img/_cover.png"
+	  "res/game_img/dark_souls_cover.png"
 	]
   },
   "darkest_dungeon": {
 	"title": "Darkest Dungeon",
     "link": "games/darkest_dungeon.html",
-    "description": "",
+    "description": "Darkest Dungeon is a role-playing game in which the player manages a roster of heroes and adventurers to explore these dungeons and fight the creatures within. Prior to entering a dungeon, the player can use facilities in a town near the mansion to dismiss or recruit more heroes, send heroes to perform various activities that will heal them, gain new combat or camping skills, reduce their stress, or remove any afflictions that they incurred while in a dungeon, and buy and sell equipment and supplies to outfit their heroes, using money and loot gained during dungeon runs. Many of these facilities can also be improved to add more benefits or options to the player.",
     "categories": [
       "singleplayer",
       "rpg",
