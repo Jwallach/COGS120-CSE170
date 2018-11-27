@@ -13,8 +13,7 @@ games =
       "competitive"
     ],
     "similar_games": [
-      "team_fortress_2",
-	  "paladins"
+      "team_fortress_2"
     ],
 	"images": [
 	  "res/game_img/ow_cover.png",
@@ -121,8 +120,7 @@ games =
 	  "open_world"
     ],
     "similar_games": [
-      "warframe",
-	  "anthem"
+      "warframe"
     ],
 	"images": [
 	  "res/game_img/destiny_cover.png"
@@ -205,7 +203,7 @@ games =
       "rng"
     ],
     "similar_games": [
-      "xenonauts"
+      "darkest_dungeon"
     ],
 	"images": [
 	  "res/game_img/xcom_cover.png"
@@ -227,6 +225,7 @@ games =
       "overwatch"
     ],
 	"images": [
+		"res/game_img/team_fortress_2_cover.png"
 	]
 	},
   "cataclysm_dda": {
@@ -247,6 +246,7 @@ games =
       "skyrim"
     ],
 	"images": [
+		"res/game_img/cataclysm_dda_cover.png"
 	]
 	},
   "dwarf_fortress": {
@@ -267,6 +267,7 @@ games =
       "rimworld"
     ],
 	"images": [
+		"res/game_img/dwarf_fortress_logo.png"
 	]
 	},
   "nethack": {
@@ -286,8 +287,262 @@ games =
       "cataclysm_dda"
     ],
 	"images": [
+		"res/game_img/nethack_cover.png"
+	]
+  },
+  "fallout": {
+	"title": "Fallout 3",
+    "link": "games/fallout.html",
+    "description": "Fallout 3 is a post-apocalyptic action role-playing open world video game developed by Bethesda Game Studios and published by Bethesda Softworks. The third major installment in the Fallout series.",
+    "categories": [
+      "singleplayer",
+      "rpg"
+    ],
+    "aspects": [
+      "moddable",
+      "open_world",
+      "deterministic"
+    ],
+    "similar_games": [
+      "morrowind",
+	  "skyrim",
+	  "witcher"
+    ],
+	"images": [
+	  "res/game_img/fallout_cover.png"
+	]
+  },
+  "morrowind": {
+	"title": "The Elder Scrolls III: Morrowind",
+    "link": "games/morrowind.html",
+    "description": "The Elder Scrolls III: Morrowind is an open-world, fantasy, action role-playing video game developed by Bethesda Game Studios and published by Bethesda Softworks. It is the third installment in The Elder Scrolls series of games, following The Elder Scrolls II: Daggerfall, and preceding The Elder Scrolls IV: Oblivion.",
+    "categories": [
+      "singleplayer",
+      "rpg"
+    ],
+    "aspects": [
+      "moddable",
+      "open_world",
+      "deterministic"
+    ],
+    "similar_games": [
+      "morrowind",
+	  "skyrim",
+	  "witcher"
+    ],
+	"images": [
+	  "res/game_img/morrowind_cover.png"
+	]
+  },
+  "ingress": {
+	"title": "Ingress Prime",
+    "link": "games/ingress.html",
+    "description": "Ingress is a location-based, augmented-reality mobile game developed by Niantic. The game has a science fiction back story with a continuous open narrative. Ingress is also considered to be a location-based exergame.",
+    "categories": [
+      "multiplayer",
+	  "mobile"
+    ],
+    "aspects": [
+      "augmented_reality"
+    ],
+    "similar_games": [
+      "pokemon"
+    ],
+	"images": [
+	  "res/game_img/ingress_cover.png"
+	]
+  },
+  "minecraft": {
+	"title": "Minecraft",
+    "link": "games/minecraft.html",
+    "description": "Minecraft is a sandbox video game that game allows players to build with a variety of different blocks in a 3d procedurally generated world, requiring creativity from players. Other activities in the game include exploration, resource gathering, crafting, and combat.",
+    "categories": [
+      "multiplayer",
+	  
+    ],
+    "aspects": [
+      "moddable",
+	  "open_world"
+    ],
+    "similar_games": [
+      "terraria"
+    ],
+	"images": [
+	  "res/game_img/minecraft_cover.png"
+	]
+  },
+  "terraria": {
+	"title": "Terraria",
+    "link": "games/terraria.html",
+    "description": "",
+    "categories": [
+      "multiplayer",
+	  
+    ],
+    "aspects": [
+      "moddable",
+	  "open_world"
+    ],
+    "similar_games": [
+      "minecraft"
+    ],
+	"images": [
+	  "res/game_img/terraria_cover.png"
+	]
+  },
+  "gwent": {
+	"title": "Gwent",
+    "link": "games/gwent.html",
+    "description": "",
+    "categories": [
+      "singleplayer",
+	  "multiplayer",
+	  "card_game"
+    ],
+    "aspects": [
+      "competitive",
+	  "rng"
+    ],
+    "similar_games": [
+      "hearthstone",
+	  "magic"
+    ],
+	"images": [
+	  "res/game_img/gwent_cover.png"
+	]
+  },
+  "magic": {
+	"title": "",
+    "link": "games/.html",
+    "description": "",
+    "categories": [
+      "singleplayer",
+	  "multiplayer",
+	  "card_game"
+    ],
+    "aspects": [
+      "competitive",
+	  "rng"
+    ],
+    "similar_games": [
+      "hearthstone",
+	  "gwent"
+    ],
+	"images": [
+	  "res/game_img/magic_cover.png"
+	]
+  },
+  "dota2": {
+	"title": "Dota 2",
+    "link": "games/dota2.html",
+    "description": "",
+    "categories": [
+      "multiplayer"
+    ],
+    "aspects": [
+      "competitive",
+    ],
+    "similar_games": [
+      "league_of_legends"
+    ],
+	"images": [
+	  "res/game_img/dota_cover.png"
+	]
+  },
+  "league_of_legends": {
+	"title": "League of Legends",
+    "link": "games/league_of_legends.html",
+    "description": "",
+    "categories": [
+      "multiplayer"
+    ],
+    "aspects": [
+      "competitive",
+    ],
+    "similar_games": [
+      "dota2"
+    ],
+	"images": [
+	  "res/game_img/league_of_legends_cover.png"
+	]
+  },
+  "warframe": {
+	"title": "Warframe",
+    "link": "games/warframe.html",
+    "description": "",
+    "categories": [
+      "multiplayer"
+    ],
+    "aspects": [
+	  "open_world",
+      "rng"
+    ],
+    "similar_games": [
+      "destiny"
+    ],
+	"images": [
+	  "res/game_img/warframe_cover.png"
+	]
+  },
+  "gta": {
+	"title": "Grand Theft Auto V",
+    "link": "games/gta.html",
+    "description": "",
+    "categories": [
+      "singleplayer",
+	  "multiplayer",
+	  "fps"
+    ],
+    "aspects": [
+      "open_world",
+	  "story_driven"
+    ],
+    "similar_games": [
+      "rdr2",
+	  "witcher"
+    ],
+	"images": [
+	  "res/game_img/gta_cover.png"
+	]
+  },
+  "dark_souls": {
+	"title": "Dark Souls",
+    "link": "games/dark_souls.html",
+    "description": "",
+    "categories": [
+      "multiplayer",
+      "rpg"
+    ],
+    "aspects": [
+      "open_world",
+	  "hard_but_fair_difficulty",
+      "rng"
+    ],
+    "similar_games": [
+      "mh"
+    ],
+	"images": [
+	  "res/game_img/_cover.png"
+	]
+  },
+  "darkest_dungeon": {
+	"title": "Darkest Dungeon",
+    "link": "games/darkest_dungeon.html",
+    "description": "",
+    "categories": [
+      "singleplayer",
+      "rpg",
+	  "turn_based"
+    ],
+    "aspects": [
+	  "hard_but_fair_difficulty",
+      "rng"
+    ],
+    "similar_games": [
+      "xcom"
+    ],
+	"images": [
+	  "res/game_img/darkest_dungeon_cover.png"
 	]
   }
 };
-
-
