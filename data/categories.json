@@ -69,6 +69,25 @@
       "hearthstone",
       "xcom"
     ]
+  },
+    "card_game": {
+    "title":"Card Game",
+    "link": "categories/card_game.html",
+    "description": "Games which are played using cards, ranging from traditional 52 card set such as poker to less traditional cards featuring monsters and spells. These game are usually turn based an often multiplayer, having 2 players pit their decks against each other",
+
+    "game_examples": [
+      "hearthstone"
+    ]
+  },
+    "mobile": {
+    "title":"Mobile Game",
+    "link": "categories/mobile.html",
+    "description": "Games which are designed to be played on a mobile playform, generally smartphone. Many games traditionally played on PC or console can be played on a mobile console, while otheres are hard to translate. Generally feature shorter game sessions and the ability to play for small sessions.",
+
+    "game_examples": [
+      "hearthstone",
+      "pokemon"
+    ]
   }
     
 };

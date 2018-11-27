@@ -69,5 +69,26 @@
     "xcom",
     "darkest_dungeon"
     ]
-    }
+  },
+    "story_driven": {
+    "title":"Story Driven Gameplay",
+    "link": "aspects/story_driven.html",
+    "description": "Games that feature story as a principal component of the design of the game. Great care is taken to make the world feel alive and fleshed out, in contrast where story is merely an afterthough for the gameplay.",
+
+    "game_examples": [
+      "darkest_dungeon",
+      "skyrim",
+      "witcher"
+    ]
+  },
+    "ar": {
+    "title":"Augmented Reality",
+    "link": "aspects/ar.html",
+    "description": "Games that feature augmented reality, or superimposing game objects on a picture of the real world. For example, an RPG might have the monster the player is fighting appear in front of whatever a smartphone camera has displayed",
+
+    "game_examples": [
+      "dota2",
+      "league_of_legends"
+    ]
+  }
 };
