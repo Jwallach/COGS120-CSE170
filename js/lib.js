@@ -1,5 +1,5 @@
 //MAKE SURE THE BUTTON THAT NEEDS TO BE BEDITED HAS THE ID wishlist_game_ + game_key
-//RETURNS TRUE IF ADDED TI WISHLITS, FALSE IF REMOVED
+//RETURNS TRUE IF ADDED TO WISHLIST, FALSE IF REMOVED
 function modify_wishlist(game_key)
 {
     //if not defined,set wishlist to null 
@@ -31,11 +31,5 @@ function modify_wishlist(game_key)
         document.getElementById("wishlist_game_" + game_key).innerHTML = "Game added to Wish List";
         localStorage.setItem("wishlist",JSON.stringify(wishlist));
         return false;
-    }
-    
-    
-    
-    
-    
-    
+    } 
 }
