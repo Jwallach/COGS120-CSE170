@@ -5,7 +5,7 @@ $( document ).ready(function() {
     for (key in gameMap)
     {
 		document.getElementById("game_list").innerHTML += "<button class='collapsible'>"+gameMap[key]["title"]+"</button>";
-		document.getElementById("game_list").innerHTML += "<div class='content'><p class='description'>"+gameMap[key]["description"]+"<br><a href=" + gameMap[key]["link"] + ">Learn More</a></p>M/div>";
+		document.getElementById("game_list").innerHTML += "<div class='content'><p class='description'>"+gameMap[key]["description"]+"<br><a href=" + gameMap[key]["link"] + ">Learn More</a></p></div>";
 	}
 	
 	var coll = document.getElementsByClassName("collapsible");
