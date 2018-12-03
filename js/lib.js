@@ -33,3 +33,43 @@ function modify_wishlist(game_key)
         return false;
     } 
 }
+
+function set_like_status(aspect_or_category,like_or_dislike,key)
+{
+  if (aspect_or_category === "category")
+  {
+    //if not defined,set the preferences to null
+    if (localStorage.getItem("preference_category") === null)
+    {
+        localStorage.setItem("preference_category",JSON.stringify({}));
+    }
+    
+    var pref_category = JSON.parse(localStorage.getItem("preference_category"));
+    
+    //Must be Liked or Disliked as string
+    pref_category[key] = like_or_dislike;
+
+    
+    localStorage.setItem("preference_category",JSON.stringify(pref_category));
+  }
+  else if (aspect_or_category === "aspect")
+  {
+    
+        
+    //if not defined,set the preferences to null
+    if (localStorage.getItem("preference_aspect") === null)
+    {
+        localStorage.setItem("preference_aspect",JSON.stringify({}));
+    }
+    
+    var pref_aspect = JSON.parse(localStorage.getItem("preference_aspect"));
+    
+    pref_aspect[key] = like_or_dislike;    
+    
+    localStorage.setItem("preference_aspect",JSON.stringify(pref_aspect));
+  }
+  else
+  {
+    console.log("first argument must be \"Aspect\" or \"Category\"")
+  }
+}
