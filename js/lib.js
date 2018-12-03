@@ -36,7 +36,7 @@ function modify_wishlist(game_key)
 
 function set_like_status(aspect_or_category,like_or_dislike,key)
 {
-  if (aspect_or_category === "category")
+  if (aspect_or_category.toLowerCase() === "category")
   {
     //if not defined,set the preferences to null
     if (localStorage.getItem("preference_category") === null)
@@ -52,7 +52,7 @@ function set_like_status(aspect_or_category,like_or_dislike,key)
     
     localStorage.setItem("preference_category",JSON.stringify(pref_category));
   }
-  else if (aspect_or_category === "aspect")
+  else if (aspect_or_category.toLowerCase() === "aspect")
   {
     
         
@@ -70,6 +70,7 @@ function set_like_status(aspect_or_category,like_or_dislike,key)
   }
   else
   {
-    console.log("first argument must be \"Aspect\" or \"Category\"")
+    console.log("first argument must be \"aspect\" or \"category\"");
+    console.log(aspect_or_category.toLowerCase());
   }
 }

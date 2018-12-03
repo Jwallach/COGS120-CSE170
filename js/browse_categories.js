@@ -5,7 +5,11 @@ $( document ).ready(function() {
     for (key in categoryMap)
     {
 		document.getElementById("category_list").innerHTML += "<button class='collapsible'>"+categoryMap[key]["title"]+"</button>";
-		document.getElementById("category_list").innerHTML += "<div class='content'><p class='description'>"+categoryMap[key]["description"]+"<br><a href=" + categoryMap[key]["link"] + ">Learn More</a></p>";
+		document.getElementById("category_list").innerHTML += "<div class='content'><p class='description'>"+categoryMap[key]["description"]+"<br><a href=" + categoryMap[key]["link"] + ">Learn More</a></p><br>";
+    
+        
+    document.getElementById("category_list").innerHTML += "<button class='btn wishlist-btn' id='wishlist_game_"+key+"' type='button' onclick='set_like_status(\"category\",\"Liked\",\""+key+"\")'>Like This Category</button></div>";
+    document.getElementById("category_list").innerHTML += "<button class='btn wishlist-btn' id='wishlist_game_"+key+"' type='button' onclick='set_like_status(\"category\",\"Disliked\",\""+key+"\")'>Dislike This Category</button></div>";
 	}
 	
 	var coll = document.getElementsByClassName("collapsible");
