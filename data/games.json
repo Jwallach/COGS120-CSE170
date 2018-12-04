@@ -315,7 +315,7 @@ games =
 	  "witcher"
     ],
 	"images": [
-	  "res/game_img/fallout_cover.png"
+	  "res/game_img/skyrim_cover.png"
 	]
   },
   "morrowind": {
